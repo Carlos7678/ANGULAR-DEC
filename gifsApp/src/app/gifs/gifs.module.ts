@@ -12,7 +12,7 @@ import { ResultadosComponent } from './resultados/resultados.component';
     BusquedaComponent,
     ResultadosComponent
   ],
-  exports: [
+  exports:[
     GifsPageComponent
   ],
   imports: [
