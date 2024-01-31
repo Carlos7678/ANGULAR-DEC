@@ -8,7 +8,7 @@ import { GifsService } from '../gifs/services/gifs.service';
   styleUrl: './sidebar.component.css'
 })
 export class SidebarComponent implements OnInit{
-  
+
 constructor(private GifsService: GifsService){}
 
 ngOnInit(): void {}
@@ -17,5 +17,7 @@ get historial(){
   return this.GifsService.historial;
 }
 
-
+buscar(termino: string){
+  this.GifsService.buscarGifs2(termino);
+}
 }
